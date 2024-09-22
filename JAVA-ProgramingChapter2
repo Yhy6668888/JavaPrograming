@@ -1,0 +1,122 @@
+public class test7 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the radious and length of a cylinder:");
+        double radious=sc.nextDouble();
+        double length=sc.nextDouble();
+        double area=Math.PI*radious*radious;
+        double volume=area * length;
+        System.out.println("The area  is "+area);
+        System.out.println("The volume  is "+volume);
+    }
+}
+
+public class GratuityCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the subtotal and gratuity rate:");
+        double subtotal = scanner.nextDouble();
+        double gratuityRate = scanner.nextDouble();
+        double gratuity = subtotal * (gratuityRate / 100);
+        double total = subtotal + gratuity;
+
+        System.out.println("The gratuity is $" + gratuity + " and the total is $" + total + ".");
+
+        scanner.close();
+    }
+}
+
+public class BMICalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter weight in pounds: ");
+        double weightInPounds = scanner.nextDouble();
+
+        System.out.print("Enter height in inches: ");
+        double heightInInches = scanner.nextDouble();
+
+        double weightInKilograms = weightInPounds * 0.45359237;
+        double heightInMeters = heightInInches * 0.0254;
+
+        double bmi = weightInKilograms / (heightInMeters * heightInMeters);
+
+        System.out.println("BMI is: " + bmi);
+
+        scanner.close();
+    }
+}
+
+
+public class TripCostCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the driving distance9: ");
+        double distance = scanner.nextDouble();
+
+        System.out.print("Enter miles per gallon: ");
+        double fuelEfficiency = scanner.nextDouble();
+
+        System.out.print("Enter the price per gallon: ");
+        double pricePerGallon = scanner.nextDouble();
+
+        double gallonsNeeded = distance / fuelEfficiency;
+        double costOfTrip = gallonsNeeded * pricePerGallon;
+
+        System.out.println("The cost of the trip is: $" + costOfTrip);
+
+        scanner.close();
+    }
+}
+
+
+
+public class HexagonAreaCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the length of the side of a hexagon: ");
+        double sideLength = scanner.nextDouble();
+
+        double area = (3 * Math.sqrt(3) * Math.pow(sideLength, 2)) / 2;
+
+        System.out.println("The area of the hexagon is: " + area);
+
+        scanner.close();
+    }
+}
+
+public class CompoundValueCalculator {
+    public static void main(String[] args) {
+        double monthlySavings = 100;
+        double monthlyInterestRate = 0.05 / 12;
+        double totalValue = 0;
+
+        for (int month = 1; month <= 12; month++) {
+            totalValue = (totalValue + monthlySavings) * (1 + monthlyInterestRate);
+        }
+
+        System.out.println("The total value in the account after 12 months is: $" + totalValue);
+    }
+}
+
+public class SavingsCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter a monthly saving amount: ");
+        double monthlySaving = scanner.nextDouble();
+
+        double monthlyInterestRate = 0.05 / 12;
+        double accountValue = 0;
+
+        for (int month = 1; month <= 6; month++) {
+            accountValue = (accountValue + monthlySaving) * (1 + monthlyInterestRate);
+        }
+
+        System.out.println("The account value after the sixth month is: $" + accountValue);
+
+        scanner.close();
+    }
+}
