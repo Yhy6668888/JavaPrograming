@@ -1,0 +1,13 @@
+public class Lab2Task9 {
+    public static void main(String[] args) {
+                double monthlySavings = 100;
+                double monthlyInterestRate = 0.05 / 12;
+                int months = 12;
+                double accountValue = 0;
+                for (int i = 1; i <= months; i++) {
+                    accountValue = (accountValue + monthlySavings) * (1 + monthlyInterestRate);
+                }
+                System.out.println("The value in the account after " + months + " months is: $" + accountValue);
+
+        }
+}
