@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+public class Lab2Task23 {
+    public static void main(String[] args) {
+      int num=5;
+      int num2=8;
+      int max=(num>num2)?num:num2;
+
+System.out.println(max);    
+    }
+}
+
