@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class Lab2Task10 {
+
+        public static void main(String[] args) {
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Enter purchase amount");
+            double purchaseAmount = sc.nextDouble();
+            double taxRate = 0.06;
+            double salesTax = purchaseAmount * taxRate;
+            System.out.printf("销售税为：$%.2f", salesTax);
+        }
+    }
