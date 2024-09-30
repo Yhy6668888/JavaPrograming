@@ -28,3 +28,62 @@ public class day {
         }
     }
 }
+
+
+
+
+public class Test {
+    public static void main(String[] args) {
+        double i=50.0;
+        double k=i+50.0;
+        double j=k+1;
+
+
+        System.out.println("j is "+j+" k is "+k);
+    }
+}
+
+
+public class Test2 {
+    public static void main(String[] args) {
+        double radius=1.0;
+        double area=Math.PI*radius*radius;
+        System.out.println("The area of the circle is "+area+"for radious "+radius);
+
+        double radius2=2.0;
+        double area2=Math.PI*radius2*radius2;
+        System.out.println("The area of the circle is "+area2+"for radious "+radius2);
+
+    }
+}
+
+
+import java.util.Scanner;
+
+public class Test3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int k;
+        k=sc.nextInt();
+        int i=k+2;
+        System.out.println(i);
+    }
+}
+
+
+public class Test4 {
+    public static void main(String[] args) {
+        int i=2;
+        int j=2;
+        int k=2;
+        i=j=k;
+        System.out.println(i+" "+j+" "+k);
+    }
+}
+
+
+
+
+
+
+
