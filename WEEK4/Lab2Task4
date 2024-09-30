@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class Lab2Task4 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the radious and length in a cylinder:");
+        double radius = sc.nextDouble();
+        double length = sc.nextDouble();
+        double area = Math.PI * radius * radius;
+        double volume = Math.PI * radius * radius * length;
+        System.out.println("The area of the cylinder is " + area);
+        System.out.println("The volume of the cylinder is " + volume);
+    }
+}
