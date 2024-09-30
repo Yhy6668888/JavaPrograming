@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class Lab2Task19 {
+    public static void main(String[] arg){
+        int number1=(int)(System.currentTimeMillis()%10);
+        int number2=(int)(System.currentTimeMillis()/10%10);
+        Scanner input = new Scanner(System.in);
+        System.out.print("what is "+number1+" and "+number2+"? ");
+        int number3=input.nextInt();
+        System.out.println(number1+"+"+number2+"="number3+"is"+(number1+number2==number3));
+
+    }
+}
+
