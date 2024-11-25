@@ -1,0 +1,23 @@
+public class CircleWithPeivateDataFields {
+    private double radius=1;
+    private static int  numberOfObjects=0;
+    public CircleWithPeivateDataFields() {
+        numberOfObjects++;
+    }
+    public CircleWithPeivateDataFields(double newradius) {
+        radius=newradius;
+        numberOfObjects++;
+    }
+    public double getRadius() {
+        return radius;
+    }
+    public void setRadius(double newradius) {
+        radius=(newradius>=0)?newradius:0;
+    }
+    public static int getNumberOfObjects() {
+        return numberOfObjects;
+    }
+    public double getArea(){
+        return Math.PI*radius*radius;
+    }
+}
