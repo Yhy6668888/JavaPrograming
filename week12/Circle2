@@ -1,0 +1,28 @@
+public class Circle2 {
+    // 圆形的半径
+    double radius;
+    // 用于记录创建的圆形对象数量
+    private static int numberOfObjects = 0;
+
+    // 无参构造函数，创建半径为1的圆形，并增加对象数量计数
+    public Circle2() {
+        radius = 1;
+        numberOfObjects++;
+    }
+
+    // 有参构造函数，根据指定半径创建圆形，并增加对象数量计数
+    public Circle2(double radius) {
+        this.radius = radius;
+        numberOfObjects++;
+    }
+
+    // 返回创建的圆形对象数量
+    public static int getNumber0fObjects() {
+        return numberOfObjects;
+    }
+
+    // 获取圆形的面积
+    public double getArea() {
+        return radius * radius * Math.PI;
+    }
+}
